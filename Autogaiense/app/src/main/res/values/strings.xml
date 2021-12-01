@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Autogaiense</string>
+    <string name="no_account">Não tens conta?<b>Regista-te! </b> </string> <!--Substituição de expreção por uma mais curta -->
+</resources>

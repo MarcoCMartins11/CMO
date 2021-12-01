@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".SignupActivity">
+
+    <TextView
+
+        android:id="@+id/titleLabelTv"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Registo"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Crie uma nova conta e registe-se!"
+        android:layout_below="@+id/titleLabelTv"
+        style = "@style/TextAppearance.MaterialComponents.Caption"
+        android:textColor="@color/black"/>
+
+    <!--Nome-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTil"
+        android:layout_above="@+id/emailTil"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTil"
+        android:layout_above="@+id/passwordTil"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Morada-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addressTil"
+        android:layout_marginTop="395dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/addressEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Morada"
+            android:inputType="text|textPostalAddress"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Telemovel-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneTil"
+        android:layout_marginTop="460dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contacto"
+            android:inputType="phone"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Data Nascimento-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/birthTil"
+        android:layout_marginTop="525dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/birthEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data de nascimento"
+            android:inputType="date"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+   <!--
+   Tentativa de datepicker!!!!!!
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_marginTop="500dp"
+        android:layout_alignParentRight="true"
+        android:scaleX="0.8"
+        android:scaleY="0.8">
+
+    </DatePicker>
+
+    -->
+
+    <!-- Botão Registar -->
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordTil"
+        android:layout_marginTop="210dp"
+        android:text="Registar" />
+
+
+</RelativeLayout>
